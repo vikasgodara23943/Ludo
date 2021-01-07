@@ -258,12 +258,10 @@
                 </div>
                 <div class="remaining">
                     
-                    <div class="remaining_line">
-
-                    </div>
+                    <progress  value="0" class="remaining_line" max="2" id="progress_bar"></progress>
                     <p class="player_count">2 Players Remaining</p>
                 </div>
-                <div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/D9175EF28FE8DA5058EA3560DD22D1D0'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div>
+                <div class='pm-button' onclick="plus()"><a target="_blank" href='https://www.payumoney.com/paybypayumoney/#/D9175EF28FE8DA5058EA3560DD22D1D0'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div>   
             </div>
         </div>
 
@@ -397,4 +395,14 @@
         </div>
     </div>
     
+    
+    
+    <script>
+        var x = document.getElementById('progress_bar').value;
+        var y = parseInt(x);
+        function plus(){
+            y++;
+            document.getElementById('progress_bar').value = y;
+        }
+    </script>
 </body>
